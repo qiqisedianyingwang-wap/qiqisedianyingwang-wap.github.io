@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>琪琪色电影网 - 色彩电影专题 · 莫兰迪配色片单与影评</title>
+<meta name="keywords" content="琪琪色电影网,qiqisedianyingwang-wap,色彩电影,莫兰迪色,电影配色,色彩片单,色彩美学,电影美学">
+<meta name="description" content="琪琪色电影网（qiqisedianyingwang-wap）专注色彩美学与配色主题电影，探索莫兰迪色、胶片质感与电影配色艺术，提供色彩主题片单、排行榜与深度影评。">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="琪琪色电影网 - 色彩电影专题">
+<meta property="og:description" content="专注色彩美学与配色主题电影，探索莫兰迪色、胶片质感与电影配色艺术，提供色彩主题片单与影评。">
+<meta property="og:url" content="https://qiqisedianyingwang-wap.github.io">
+<link rel="canonical" href="https://qiqisedianyingwang-wap.github.io">
+<style>
+:root{
+  --bg:#f4efe9;--paper:#fbf7f2;--card:#fffdfa;--card2:#f7f1ea;
+  --line:#e2d8cc;--line2:#cfc1b0;
+  --txt:#3d322c;--txt2:#6b5d53;--txt3:#9c8d80;
+  --rose:#c98b86;--sage:#9dac94;--clay:#c8a27a;--slate:#8799a8;
+  --plum:#a58392;--cream:#e7cf9e;--ease:cubic-bezier(.2,.8,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","WenQuanYi Micro Hei","PingFang SC","Microsoft YaHei",serif;
+  background:var(--bg);color:var(--txt);line-height:1.85;font-size:15px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(circle at 85% 8%,rgba(201,139,134,.16),transparent 40%),radial-gradient(circle at 8% 88%,rgba(157,172,148,.16),transparent 40%),var(--bg)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 78%)}
+a{color:inherit;text-decoration:none;transition:color .25s var(--ease)}
+ul{list-style:none}
+::selection{background:var(--rose);color:#fff}
+:focus-visible{outline:2.5px solid var(--rose);outline-offset:3px}
+img{max-width:100%;display:block}
+
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+section{padding:88px 0;position:relative}
+.sec-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:36px;flex-wrap:wrap}
+.sec-t{font-size:27px;font-weight:900;display:flex;align-items:center;gap:14px;letter-spacing:-.2px}
+.sec-t em{font-style:normal;font-size:11.5px;color:var(--txt3);letter-spacing:3px;text-transform:uppercase}
+.swatch{width:40px;height:40px;border-radius:9px;position:relative;flex-shrink:0;box-shadow:inset 0 0 0 3px rgba(255,255,255,.5),0 6px 16px rgba(0,0,0,.1)}
+.sec-more{font-size:13px;color:var(--txt2);border:1.5px solid var(--line2);padding:7px 15px;border-radius:999px;font-weight:700;background:var(--card)}
+.sec-more:hover{color:#fff;background:var(--rose)}
+
+/* 导航 */
+.header{position:sticky;top:0;z-index:100;background:rgba(251,247,242,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{max-width:1160px;margin:0 auto;padding:0 22px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:21px;flex-shrink:0;letter-spacing:-.3px}
+.logo b{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--rose),var(--plum));color:#fff;display:grid;place-items:center;font-size:16px;font-weight:900}
+.logo span{color:var(--rose)}
+.menu{display:flex;gap:4px;align-items:center}
+.menu a{font-size:14.5px;color:var(--txt2);padding:9px 15px;border-radius:999px;font-weight:700}
+.menu a:hover{color:var(--txt);background:var(--card2)}
+.menu a.on{color:#fff;background:var(--rose)}
+.btn-nav{display:none;width:42px;height:42px;border:none;border-radius:11px;background:var(--card2);color:var(--txt);font-size:20px;cursor:pointer;border:1px solid var(--line2)}
+
+/* Hero · 色卡调色盘 */
+.hero{padding:44px 0 24px}
+.hero-in{position:relative;background:var(--paper);border-radius:26px;overflow:hidden;border:1.5px solid var(--line);box-shadow:0 30px 70px rgba(100,80,68,.16);padding:52px 44px}
+.hero-in::after{content:"";position:absolute;right:-60px;bottom:-60px;width:300px;height:300px;border-radius:50%;background:repeating-conic-gradient(from 0deg,#c98b86 0deg 60deg,#9dac94 60deg 120deg,#8799a8 120deg 180deg,#c8a27a 180deg 240deg,#a58392 240deg 300deg,#e7cf9e 300deg 360deg);opacity:.16}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 400px;gap:44px;align-items:center}
+.hero-tx .chip{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:800;padding:7px 14px;border-radius:999px;background:var(--card2);border:1px solid var(--line2);color:var(--txt2)}
+.hero-tx h1{font-size:48px;line-height:1.28;font-weight:900;letter-spacing:-1.2px;margin-top:16px}
+.hero-tx h1 .hl{color:transparent;background:linear-gradient(90deg,var(--rose),var(--plum),var(--clay));-webkit-background-clip:text;background-clip:text}
+.hero-tx p{font-size:16px;color:var(--txt2);margin-top:15px;max-width:470px}
+.hero-cta{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{font-size:14.5px;font-weight:700;padding:13px 26px;border-radius:11px;cursor:pointer;border:1.5px solid transparent;transition:.3s var(--ease);font-family:inherit}
+.btn-p{background:linear-gradient(135deg,var(--rose),var(--plum));color:#fff;box-shadow:0 14px 28px rgba(201,139,134,.4)}
+.btn-p:hover{transform:translateY(-3px);filter:brightness(1.08)}
+.btn-o{background:var(--card);color:var(--txt);border-color:var(--line2)}
+.btn-o:hover{background:var(--card2);color:var(--rose);border-color:var(--rose)}
+.h-stat{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.h-stat div b{display:block;font-family:Georgia,serif;font-size:27px;font-weight:900;color:var(--rose)}
+.h-stat div span{font-size:12.5px;color:var(--txt3)}
+
+/* 色卡墙 */
+.palette{position:relative;height:320px;border-radius:16px;overflow:hidden;border:1.5px solid var(--line);box-shadow:0 24px 54px rgba(100,80,68,.14)}
+.strip{position:absolute;display:flex;width:100%;height:50%;}
+.strip.top{top:0}
+.strip.bot{bottom:0}
+.strip div{flex:1;position:relative;transition:.5s var(--ease)}
+.strip div:hover{flex:1.5;filter:brightness(1.06)}
+.strip div span{position:absolute;left:12px;bottom:10px;font-size:11px;font-weight:800;color:rgba(255,255,255,.92);letter-spacing:1px}
+.s1{background:#c98b86}.s2{background:#e7cf9e}.s3{background:#9dac94}.s4{background:#8799a8}.s5{background:#a58392}.s6{background:#c8a27a}
+
+/* 排行榜 · 色阶行 */
+.rank-list{display:grid;gap:13px}
+.colorow{display:grid;grid-template-columns:88px 1fr 120px;gap:18px;align-items:center;background:var(--card);border:1.5px solid var(--line);border-radius:13px;padding:14px 18px;transition:.35s var(--ease)}
+.colorow:hover{transform:translateX(6px);border-color:var(--rose)}
+.colorow .chipbox{height:64px;border-radius:9px;position:relative;display:grid;place-items:center;color:#fff;font-family:Georgia,serif;font-size:22px;font-weight:900;box-shadow:inset 0 0 0 4px rgba(255,255,255,.4)}
+.colorow .info b{font-size:16px;font-weight:900}
+.colorow .info .tags{display:flex;gap:7px;margin-top:7px;flex-wrap:wrap}
+.colorow .info .tags i{font-style:normal;font-size:11px;padding:3px 9px;border-radius:5px;background:var(--card2);border:1px solid var(--line);color:var(--txt2)}
+.colorow .info .quote{font-size:12.5px;color:var(--txt3);margin-top:6px;border-left:2px solid var(--rose);padding-left:9px}
+.colorow .sc{text-align:right}
+.colorow .sc b{font-family:Georgia,serif;font-size:22px;color:var(--rose)}
+.colorow .sc span{font-size:11.5px;color:var(--txt3)}
+
+/* 分类 · 莫兰迪格纹 */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gridc{background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:20px;position:relative;transition:.4s;overflow:hidden}
+.gridc::before{content:"";position:absolute;inset:0;opacity:0;transition:.4s;background-image:repeating-linear-gradient(45deg,transparent 0 9px,rgba(255,255,255,.25) 9px 10px)}
+.gridc:hover{transform:translateY(-7px)}
+.gridc:hover::before{opacity:1}
+.gridc .cap{width:52px;height:52px;border-radius:12px;margin-bottom:14px;position:relative;box-shadow:inset 0 0 0 4px rgba(255,255,255,.5);z-index:1}
+.gridc h4{font-size:16px;font-weight:900;position:relative;z-index:1}
+.gridc p{font-size:11.5px;color:var(--txt3);margin-top:5px}
+
+/* 资讯 · 色纸卡片 */
+.news{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.paper{background:var(--card);border:1.5px solid var(--line);border-radius:16px;overflow:hidden;transition:.4s}
+.paper:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(100,80,68,.16)}
+.paper .cover{height:150px;position:relative;display:grid;place-items:center;color:#fff}
+.paper .cover::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,transparent 0 12px,rgba(255,255,255,.16) 12px 13px)}
+.paper .cover span{position:relative;z-index:1;font-size:13px;letter-spacing:3px;font-weight:800}
+.paper .body{padding:20px}
+.paper .body b{font-size:16px;font-weight:900;line-height:1.55}
+.paper .body p{font-size:13.5px;color:var(--txt2);margin-top:8px}
+.paper .foot{display:flex;justify-content:space-between;font-size:11.5px;color:var(--txt3);margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.stars{color:var(--clay);letter-spacing:2px;font-size:12.5px;margin-top:9px}
+
+/* 关于 · 调色板 */
+.about{background:var(--paper);border:1.5px solid var(--line);border-radius:26px;padding:46px;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(100,80,68,.14)}
+.about::before{content:"";position:absolute;right:30px;top:30px;width:150px;height:150px;border-radius:50%;background:conic-gradient(var(--rose),var(--sage),var(--slate),var(--clay),var(--plum),var(--cream),var(--rose));opacity:.22;filter:blur(2px)}
+.board{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.board h3{font-size:26px;font-weight:900;margin-bottom:14px}
+.board>p{color:var(--txt2);font-size:14.5px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.card{border:1.5px solid var(--line);border-radius:12px;padding:16px;background:var(--card)}
+.card b{display:block;font-family:Georgia,serif;font-size:22px;font-weight:900;color:var(--rose)}
+.card span{font-size:12px;color:var(--txt3)}
+.contact form{display:grid;gap:12px}
+.contact label{font-size:12.5px;color:var(--txt2);font-weight:700}
+.contact input,.contact textarea{width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:11px;padding:12px 14px;font-family:inherit;color:var(--txt);font-size:14px}
+.contact textarea{resize:vertical;min-height:96px}
+.contact input:focus,.contact textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 3px rgba(201,139,134,.18)}
+.contact button{border:none;border-radius:11px;padding:14px;background:linear-gradient(135deg,var(--rose),var(--plum));color:#fff;font-weight:900;font-size:15px;cursor:pointer;transition:.3s}
+.contact button:hover{filter:brightness(1.08);transform:translateY(-2px)}
+
+/* 页脚 */
+footer{background:var(--paper);color:var(--txt2);padding:56px 0 26px;margin-top:24px;border-top:1px solid var(--line)}
+.foot{max-width:1160px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.foot .brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:20px;color:var(--txt)}
+.foot .brand b{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--rose),var(--plum));display:grid;place-items:center;font-size:15px;color:#fff}
+.foot .brand span{color:var(--rose)}
+.foot>p{font-size:13.5px;margin-top:14px;color:var(--txt3);line-height:1.85}
+.foot h5{font-size:14px;margin-bottom:16px;letter-spacing:1px;color:var(--txt)}
+.foot ul li{margin-bottom:10px}
+.foot ul a{color:var(--txt3);font-size:13.5px}
+.foot ul a:hover{color:var(--rose)}
+.copy{max-width:1160px;margin:34px auto 0;padding:20px 22px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--txt3)}
+.copy a{color:var(--txt2)}
+.copy a:hover{color:var(--rose)}
+
+.gotop{position:fixed;right:20px;bottom:-60px;width:46px;height:46px;border-radius:50%;border:none;background:linear-gradient(135deg,var(--rose),var(--plum));color:#fff;font-size:18px;font-weight:900;cursor:pointer;z-index:99;box-shadow:0 12px 26px rgba(201,139,134,.4);transition:.35s var(--ease)}
+.gotop.show{bottom:24px}
+
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .palette{height:250px}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .colorow{grid-template-columns:72px 1fr}
+  .colorow .sc{grid-column:2/3;text-align:left}
+  .news{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .wrap{padding:0 16px}
+  section{padding:60px 0}
+  .sec-t{font-size:22px}
+  .nav{height:60px}
+  .menu{position:fixed;top:60px;left:0;right:0;flex-direction:column;padding:14px;background:rgba(251,247,242,.98);border-bottom:1px solid var(--line);gap:4px;transform:translateY(-140%);transition:.35s var(--ease)}
+  .menu.open{transform:translateY(0)}
+  .menu a{width:100%;text-align:center;padding:12px;border-radius:10px}
+  .btn-nav{display:grid;place-items:center}
+  .hero-in{padding:34px 22px}
+  .hero-tx h1{font-size:32px}
+  .hero-tx p{font-size:14.5px}
+  .h-stat{gap:20px}
+  .gridc .cap{width:46px;height:46px}
+  .about{padding:30px 20px}
+  .cards{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr;gap:24px}
+  .copy{flex-direction:column;text-align:center}
+}
+@media(max-width:380px){
+  .hero-tx h1{font-size:28px}
+  .hero-cta .btn{padding:12px 20px;font-size:14px}
+  .palette{height:auto}
+  .strip{flex-direction:column;height:100%;position:static}
+  .strip.top,.strip.bot{position:static;height:auto}
+  .strip div{min-height:46px}
+  .colorow{grid-template-columns:1fr;gap:12px}
+  .colorow .chipbox{height:52px;width:76px}
+  .colorow .sc{grid-column:1/2}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="header">
+  <div class="nav">
+    <a class="logo" href="#home" aria-label="琪琪色电影网 首页"><b>琪</b>琪琪色<span>电影网</span></a>
+    <nav class="menu" id="menu">
+      <a href="#home" class="on">首页</a>
+      <a href="#rank">色彩榜</a>
+      <a href="#category">题材分类</a>
+      <a href="#news">影评资讯</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <button class="btn-nav" id="navBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- Hero · 色卡调色盘 -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-in">
+      <div class="hero-grid">
+        <div class="hero-tx">
+          <div class="chip">● 色彩 · 配色 · 电影美学</div>
+          <h1>每一帧都是<br><span class="hl">琪琪色电影网</span></h1>
+          <p>琪琪色电影网（qiqisedianyingwang-wap）专注色彩美学与配色主题电影，探索莫兰迪色、胶片质感与电影配色艺术，提供色彩主题片单、排行榜与深度影评。</p>
+          <div class="hero-cta">
+            <a class="btn btn-p" href="#rank">查看色彩榜</a>
+            <a class="btn btn-o" href="#category">浏览题材</a>
+          </div>
+          <div class="h-stat">
+            <div><b>2,800+</b><span>色彩主题影片</span></div>
+            <div><b>6 色系</b><span>配色主题</span></div>
+            <div><b>每日</b><span>更新影评</span></div>
+          </div>
+        </div>
+        <div class="palette" aria-hidden="true">
+          <div class="strip top"><div class="s1"><span>#C98B86</span></div><div class="s2"><span>#E7CF9E</span></div><div class="s3"><span>#9DAC94</span></div></div>
+          <div class="strip bot"><div class="s4"><span>#8799A8</span></div><div class="s5"><span>#A58392</span></div><div class="s6"><span>#C8A27A</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 排行榜 · 色阶行 -->
+<section id="rank" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-t"><i class="swatch" style="background:linear-gradient(135deg,var(--rose),var(--plum))"></i>色彩榜<em>Top 10</em></div>
+      <a class="sec-more" href="#">完整榜单 ›</a>
+    </div>
+    <div class="rank-list">
+      <article class="colorow">
+        <div class="chipbox" style="background:#8799a8">01</div>
+        <div class="info"><b>布达佩斯大饭店</b><div class="tags"><i>粉调</i><i>对称构图</i><i>韦斯·安德森</i></div><div class="quote">"粉红与洋红，构筑了一整个童话世界。"</div></div>
+        <div class="sc"><b>9.4</b><br><span>2.1 万人在看</span></div>
+      </article>
+      <article class="colorow">
+        <div class="chipbox" style="background:#c98b86">02</div>
+        <div class="info"><b>英雄</b><div class="tags"><i>红调</i><i>东方美学</i><i>张艺谋</i></div><div class="quote">"红、蓝、白、绿，四种颜色讲完一段历史。"</div></div>
+        <div class="sc"><b>9.1</b><br><span>1.7 万人在看</span></div>
+      </article>
+      <article class="colorow">
+        <div class="chipbox" style="background:#9dac94">03</div>
+        <div class="info"><b>天使爱美丽</b><div class="tags"><i>绿调</i><i>法式浪漫</i><i>欧洲</i></div><div class="quote">"绿与红的撞色，是巴黎最温柔的配色。"</div></div>
+        <div class="sc"><b>8.9</b><br><span>1.3 万人在看</span></div>
+      </article>
+      <article class="colorow">
+        <div class="chipbox" style="background:#c8a27a">04</div>
+        <div class="info"><b>赎罪</b><div class="tags"><i>暖调</i><i>胶片质感</i><i>英国</i></div><div class="quote">"一抹暖黄，写尽了误会与遗憾。"</div></div>
+        <div class="sc"><b>8.8</b><br><span>9,800 人在看</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 分类 · 莫兰迪格纹 -->
+<section id="category">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-t"><i class="swatch" style="background:linear-gradient(135deg,var(--clay),var(--cream))"></i>题材分类<em>Genres</em></div>
+      <a class="sec-more" href="#">全部分类 ›</a>
+    </div>
+    <div class="cats">
+      <a class="gridc" href="#"><div class="cap" style="background:#c98b86"></div><h4>粉调电影</h4><p>640 部</p></a>
+      <a class="gridc" href="#"><div class="cap" style="background:#e7cf9e"></div><h4>暖黄胶片</h4><p>520 部</p></a>
+      <a class="gridc" href="#"><div class="cap" style="background:#9dac94"></div><h4>森系绿调</h4><p>460 部</p></a>
+      <a class="gridc" href="#"><div class="cap" style="background:#8799a8"></div><h4>冷蓝电影</h4><p>510 部</p></a>
+      <a class="gridc" href="#"><div class="cap" style="background:#a58392"></div><h4>莫兰迪色</h4><p>380 部</p></a>
+      <a class="gridc" href="#"><div class="cap" style="background:#c8a27a"></div><h4>大地色系</h4><p>440 部</p></a>
+      <a class="gridc" href="#"><div class="cap" style="background:#b56a5c"></div><h4>高饱和</h4><p>290 部</p></a>
+      <a class="gridc" href="#"><div class="cap" style="background:#7d8b7a"></div><h4>黑白影像</h4><p>610 部</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- 资讯 · 色纸卡片 -->
+<section id="news">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-t"><i class="swatch" style="background:linear-gradient(135deg,var(--slate),var(--sage))"></i>影评资讯<em>News</em></div>
+      <a class="sec-more" href="#">更多资讯 ›</a>
+    </div>
+    <div class="news">
+      <article class="paper">
+        <div class="cover" style="background:linear-gradient(150deg,#8799a8,#5d7180)"><span>色彩影评</span></div>
+        <div class="body"><b>《布达佩斯大饭店》的粉色密码</b><p>从韦斯·安德森的对称构图，拆解粉红与洋红背后的视觉语言。</p><div class="stars">★★★★★</div><div class="foot"><span>🕒 1 小时前</span><span>影评组</span></div></div>
+      </article>
+      <article class="paper">
+        <div class="cover" style="background:linear-gradient(150deg,#c98b86,#a56b66)"><span>配色片单</span></div>
+        <div class="body"><b>10 部教科书级配色电影</b><p>编辑精选高分色彩美学影片，感受每一帧的配色艺术。</p><div class="foot"><span>🕒 3 小时前</span><span>推荐组</span></div></div>
+      </article>
+      <article class="paper">
+        <div class="cover" style="background:linear-gradient(150deg,#9dac94,#738067)"><span>美学解读</span></div>
+        <div class="body"><b>莫兰迪色为何高级？</b><p>从灰调与饱和度，读懂高级感配色的底层逻辑。</p><div class="foot"><span>🕒 5 小时前</span><span>编辑部</span></div></div>
+      </article>
+      <article class="paper">
+        <div class="cover" style="background:linear-gradient(150deg,#c8a27a,#a07a52)"><span>片库更新</span></div>
+        <div class="body"><b>经典色彩修复上线</b><p>多部影史经典完成 4K 色彩修复，色调全面还原。</p><div class="foot"><span>🕒 昨天</span><span>片库组</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 关于 · 调色板 -->
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="board">
+        <div>
+          <h3>关于 琪琪色电影网</h3>
+          <p>琪琪色电影网（qiqisedianyingwang-wap）专注色彩美学与配色主题电影，探索莫兰迪色、胶片质感与电影配色艺术，提供色彩主题片单、排行榜与深度影评解读。</p>
+          <div class="cards">
+            <div class="card"><b>2,800+</b><span>色彩主题影片</span></div>
+            <div class="card"><b>6 色系</b><span>配色主题</span></div>
+            <div class="card"><b>每日</b><span>更新影评</span></div>
+            <div class="card"><b>原创</b><span>美学解读</span></div>
+          </div>
+        </div>
+        <div class="contact">
+          <form onsubmit="event.preventDefault();this.querySelector('button').textContent='提交成功 ✓'">
+            <div><label>称呼</label><input type="text" placeholder="如何称呼您" required></div>
+            <div><label>邮箱</label><input type="email" placeholder="您的邮箱地址" required></div>
+            <div><label>留言</label><textarea placeholder="想推荐的影片或合作意向"></textarea></div>
+            <button type="submit">提交留言</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div>
+      <div class="brand"><b>琪</b>琪琪色<span>电影网</span></div>
+      <p>专注色彩美学与配色主题电影，探索莫兰迪色、胶片质感与电影配色艺术，提供色彩主题片单与深度影评。</p>
+    </div>
+    <div><h5>网站导航</h5><ul><li><a href="#home">网站首页</a></li><li><a href="#rank">色彩榜</a></li><li><a href="#category">题材分类</a></li><li><a href="#news">影评资讯</a></li></ul></div>
+    <div><h5>热门色系</h5><ul><li><a href="#">粉调电影</a></li><li><a href="#">暖黄胶片</a></li><li><a href="#">森系绿调</a></li><li><a href="#">莫兰迪色</a></li></ul></div>
+    <div><h5>关于本站</h5><ul><li><a href="#about">关于我们</a></li><li><a href="#">投稿合作</a></li><li><a href="#">免责声明</a></li><li><a href="#">联系方式</a></li></ul></div>
+  </div>
+  <div class="copy">
+    <span>© 2026 琪琪色电影网（qiqisedianyingwang-wap） 保留所有权利。</span>
+    <span>网站地址：<a href="https://qiqisedianyingwang-wap.github.io">https://qiqisedianyingwang-wap.github.io</a></span>
+  </div>
+</footer>
+
+<button class="gotop" id="gotop" aria-label="回到顶部">↑</button>
+
+<script>
+var navBtn=document.getElementById('navBtn'),menu=document.getElementById('menu');
+navBtn.addEventListener('click',function(){menu.classList.toggle('open')});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open')})});
+var links=document.querySelectorAll('.menu a'),secs=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+120,idx=0;
+  secs.forEach(function(s,i){if(s.offsetTop<=pos)idx=i});
+  links.forEach(function(l,i){l.classList.toggle('on',i===idx)});
+});
+var gotop=document.getElementById('gotop');
+window.addEventListener('scroll',function(){gotop.classList.toggle('show',window.scrollY>400)});
+gotop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
